@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d22607c-2010-4844-8a0f-80baff4fbc83" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/AbeloneFeedForwardNetwork.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/ConvNeuralNet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/DataVecLab.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/GravesLSTMCharModellingWeatherForecasts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/MnistImageSave.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/PhysionetMultivariateTimeSeriesClassificationBasic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/SimplestNetwork.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCIData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCISequenceClassificationExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training-labs/target/classes/ai/skymind/training/solutions/PhysionetMultivariateTimeSeriesClassificationBasic.class" afterPath="$PROJECT_DIR$/training-labs/target/classes/ai/skymind/training/solutions/PhysionetMultivariateTimeSeriesClassificationBasic.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCIData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCISequenceClassificationExample.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/PhysionetMultivariateTimeSeriesClassificationBasic.java" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/PhysionetMultivariateTimeSeriesClassificationBasic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCIData.java" afterPath="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCIData.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/training-labs/target/" />
@@ -30,32 +22,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataVecLab.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/DataVecLab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GravesLSTMCharModellingWeatherForecasts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/GravesLSTMCharModellingWeatherForecasts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MnistImageSave.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/MnistImageSave.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,11 +44,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UCIData.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UCIData.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCIData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UCIData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCIData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UCISequenceClassificationExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCISequenceClassificationExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="50" column="73" lean-forward="true" selection-start-line="50" selection-start-column="73" selection-end-line="50" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -85,7 +79,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbaloneDataTransform.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AbaloneDataTransform.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/demos/AbaloneDataTransform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-576">
-              <caret line="62" column="57" lean-forward="false" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+            <state relative-caret-position="384">
+              <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,6 +134,7 @@
       <find>keras</find>
       <find>model</find>
       <find>exc</find>
+      <find>pa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,6 +159,9 @@
         <option value="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/Test.java" />
         <option value="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/PhysionetMultivariateTimeSeriesClassificationBasic.java" />
         <option value="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/ConvNeuralNet.java" />
+        <option value="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCISequenceClassificationExample.java" />
+        <option value="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCIData.java" />
+        <option value="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCIData.java" />
       </list>
     </option>
   </component>
@@ -179,8 +179,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="24" />
+    <option name="x" value="64" />
+    <option name="y" value="25" />
     <option name="width" value="1321" />
     <option name="height" value="834" />
   </component>
@@ -331,6 +331,74 @@
               <option name="myItemId" value="training" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solutions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trainingLabs-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trainingLabs-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="training-labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trainingLabs-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trainingLabs-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="training-labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -353,33 +421,13 @@
       <recent name="ai.skymind.training.demos" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions" />
       <recent name="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs" />
       <recent name="$PROJECT_DIR$/training-labs/src/main/resources" />
       <recent name="$PROJECT_DIR$/training-labs/src/main/resources/Keras" />
-      <recent name="$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PhysionetMultivariateTimeSeriesClassificationWithOptions">
-    <configuration default="false" name="AbeloneFeedForwardNetwork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ai.skymind.training.solutions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ai.skymind.training.solutions.AbeloneFeedForwardNetwork" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="training-labs" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.UCISequenceClassificationExample">
     <configuration default="false" name="GravesLSTMCharModellingWeatherForecasts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -448,6 +496,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="ai.skymind.training.solutions.PhysionetMultivariateTimeSeriesClassificationWithOptions" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="training-labs" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="UCISequenceClassificationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ai.skymind.training.solutions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ai.skymind.training.solutions.UCISequenceClassificationExample" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -892,19 +960,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.AbeloneFeedForwardNetwork" />
-      <item index="1" class="java.lang.String" itemvalue="Application.GravesLSTMCharModellingWeatherForecasts" />
-      <item index="2" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationBasic" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationWithOptions" />
+      <item index="0" class="java.lang.String" itemvalue="Application.GravesLSTMCharModellingWeatherForecasts" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationBasic" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationWithOptions" />
+      <item index="4" class="java.lang.String" itemvalue="Application.UCISequenceClassificationExample" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationWithOptions" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationBasic" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.GravesLSTMCharModellingWeatherForecasts" />
-        <item index="4" class="java.lang.String" itemvalue="Application.AbeloneFeedForwardNetwork" />
+        <item index="0" class="java.lang.String" itemvalue="Application.UCISequenceClassificationExample" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationWithOptions" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PhysionetMultivariateTimeSeriesClassificationBasic" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.GravesLSTMCharModellingWeatherForecasts" />
       </list>
     </recent_temporary>
   </component>
@@ -937,16 +1005,16 @@
       <workItem from="1510189760386" duration="1664000" />
       <workItem from="1510193077695" duration="794000" />
       <workItem from="1510194172658" duration="2219000" />
-      <workItem from="1510201540155" duration="3832000" />
+      <workItem from="1510201540155" duration="5359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12608000" />
+    <option name="totallyTimeSpent" value="14135000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="24" width="1321" height="834" extended-state="0" />
-    <editor active="false" />
+    <frame x="64" y="25" width="1321" height="834" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -967,11 +1035,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29110512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3787062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30648944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30648944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -979,7 +1048,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1128,8 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCIData.java" />
-    <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCISequenceClassificationExample.java" />
     <entry file="file://$PROJECT_DIR$/training-labs/src/main/resources/bow/one.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1288,7 +1354,7 @@
         <state relative-caret-position="290">
           <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1329,7 +1395,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,7 +1405,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1345,7 +1415,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,19 +1429,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCIData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/AbeloneFeedForwardNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1399,8 +1465,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/demos/AbaloneDataTransform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="62" column="57" lean-forward="false" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+        <state relative-caret-position="384">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCIData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/solutions/UCISequenceClassificationExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="50" column="73" lean-forward="true" selection-start-line="50" selection-start-column="73" selection-end-line="50" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training-labs/src/main/java/ai/skymind/training/labs/UCIData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding />
         </state>
       </provider>
