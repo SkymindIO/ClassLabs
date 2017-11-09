@@ -11,7 +11,6 @@ import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.ComputationGraphConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.conf.Updater;
-import org.deeplearning4j.nn.conf.layers.DropoutLayer;
 import org.deeplearning4j.nn.conf.layers.GravesLSTM;
 import org.deeplearning4j.nn.conf.layers.RnnOutputLayer;
 import org.deeplearning4j.nn.graph.ComputationGraph;
@@ -41,11 +40,9 @@ public class PhysionetMultivariateTimeSeriesClassificationBasic {
 
     // Change directory
 
-    //File traindata = new ClassPathResource("abalone/abalone_train.csv").getFile();
+
     //private static File baseDir = new File("src/main/resources/physionet2012");
     //private static File featuresDir = new File(baseDir, "sequence");
-
-
 
     /* Task-specific configuration */
     //private static File labelsDir = new File(baseDir, "mortality");
@@ -61,7 +58,7 @@ public class PhysionetMultivariateTimeSeriesClassificationBasic {
 
     public static final int NB_EPOCHS = 25;
     public static final int RANDOM_SEED = 1234;
-    public static final double LEARNING_RATE = 0.036;
+    public static final double LEARNING_RATE = 0.032;
     public static final int BATCH_SIZE = 40;
     public static final int lstmLayerSize = 200;
 
@@ -69,16 +66,11 @@ public class PhysionetMultivariateTimeSeriesClassificationBasic {
     public static void main(String[] args) throws IOException, InterruptedException {
         BasicConfigurator.configure();
 
-        //File traindata = new ClassPathResource("abalone/abalone_train.csv").getFile();
-        //private static File baseDir = new File("src/main/resources/physionet2012");
-        //private static File featuresDir = new File(baseDir, "sequence");
-
         File baseDir = new ClassPathResource("physionet2012").getFile();
         File featuresDir = new File(baseDir, "sequence");
 
     /* Task-specific configuration */
         File labelsDir = new File(baseDir, "mortality");
-
 
 
         // STEP 0: Flags controlling which data
@@ -111,7 +103,7 @@ public class PhysionetMultivariateTimeSeriesClassificationBasic {
 
 
             validData = new SequenceRecordReaderDataSetIterator(validFeatures, validLabels,
-                    BATCH_SIZE, numLabelClasses, false,SequenceRecordReaderDataSetIterator.AlignmentMode.ALIGN_END);
+                    BATCH_SIZE, numLabelClasses, false, SequenceRecordReaderDataSetIterator.AlignmentMode.ALIGN_END);
 
             // Load test data
             SequenceRecordReader testFeatures = new CSVSequenceRecordReader(1, ",");
@@ -147,11 +139,10 @@ public class PhysionetMultivariateTimeSeriesClassificationBasic {
                                 .activation(Activation.TANH)
                                 .build(),
                         "trainFeatures")
-                .addLayer("dropout", new DropoutLayer.Builder(0.7).build(), "L1")
                 .addLayer("predictMortality", new RnnOutputLayer.Builder(LossFunctions.LossFunction.XENT)
                         .activation(Activation.SOFTMAX)
                         .weightInit(WeightInit.XAVIER)
-                        .nIn(lstmLayerSize).nOut(numLabelClasses).build(),"dropout")
+                        .nIn(lstmLayerSize).nOut(numLabelClasses).build(),"L1")
                 .pretrain(false).backprop(true)
                 .build();
 
@@ -161,7 +152,7 @@ public class PhysionetMultivariateTimeSeriesClassificationBasic {
         model.init();
         model.setListeners(new ScoreIterationListener(10));
 
-        DataSet d = trainData.next();
+
 
         // STEP 4 Model training
 
