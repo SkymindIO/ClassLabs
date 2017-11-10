@@ -186,7 +186,7 @@ public class ConvNeuralNet {
             .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
             .iterations(1)
             .learningRate(0.006)
-            .updater(Updater.NESTEROVS).momentum(0.9)
+            .updater(new Nesterovs(0.09))
             .regularization(true).l2(1e-4)
             .list()
             // ######### LAB STEP 2 #################

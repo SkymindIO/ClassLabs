@@ -16,6 +16,7 @@ import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
 import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.factory.Nd4j;
+import org.nd4j.linalg.learning.config.RmsProp;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 
 import java.io.File;
@@ -99,18 +100,17 @@ public class GravesLSTMCharModellingWeatherForecasts {
 		MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
 			.optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT).iterations(1)
 			.learningRate(0.1)
-			.rmsDecay(0.95)
 			.seed(12345)
 			.regularization(true)
-				.updater(Updater.RMSPROP)
+				.updater(new RmsProp(0.95))
 			.l2(0.001)
             .weightInit(WeightInit.XAVIER)
 				.list()
 				.layer(0, new GravesLSTM.Builder().nIn(iter.inputColumns()).nOut(lstmLayerSize)
 						.activation(Activation.TANH).build())
 				.layer(1, new GravesLSTM.Builder().nIn(lstmLayerSize).nOut(lstmLayerSize)
-						.activation("tanh").build())
-				.layer(2, new RnnOutputLayer.Builder(LossFunction.MCXENT).activation("softmax")
+						.activation(Activation.TANH).build())
+				.layer(2, new RnnOutputLayer.Builder(LossFunction.MCXENT).activation(Activation.SOFTMAX)
 						.nIn(lstmLayerSize).nOut(nOut).build())
 				.backpropType(BackpropType.TruncatedBPTT).tBPTTBackwardLength(tbpttLength).tBPTTBackwardLength(tbpttLength)
 				.pretrain(false).backprop(true)

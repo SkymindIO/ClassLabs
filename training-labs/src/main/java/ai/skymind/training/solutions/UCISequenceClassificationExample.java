@@ -19,10 +19,12 @@ import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.ui.api.UIServer;
 import org.deeplearning4j.ui.stats.StatsListener;
 import org.deeplearning4j.ui.storage.InMemoryStatsStorage;
+import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.dataset.api.preprocessor.DataNormalization;
 import org.nd4j.linalg.dataset.api.preprocessor.NormalizerStandardize;
+import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -107,14 +109,14 @@ public class UCISequenceClassificationExample {
                 .seed(123)
                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT).iterations(1)
                 .weightInit(WeightInit.XAVIER)
-                .updater(Updater.NESTEROVS).momentum(0.9)
+                .updater(new Nesterovs(0.9))
                 .learningRate(0.005)
                 .gradientNormalization(GradientNormalization.ClipElementWiseAbsoluteValue)
                 .gradientNormalizationThreshold(0.5)
                 .list()
-                .layer(0, new GravesLSTM.Builder().activation("tanh").nIn(1).nOut(10).build())
+                .layer(0, new GravesLSTM.Builder().activation(Activation.TANH).nIn(1).nOut(10).build())
                 .layer(1, new RnnOutputLayer.Builder(LossFunctions.LossFunction.MCXENT)
-                        .activation("softmax").nIn(10).nOut(numLabelClasses).build())
+                        .activation(Activation.SOFTMAX).nIn(10).nOut(numLabelClasses).build())
                 .pretrain(false).backprop(true).build();
 
         MultiLayerNetwork net = new MultiLayerNetwork(conf);

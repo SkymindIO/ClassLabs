@@ -28,6 +28,7 @@ import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.dataset.api.preprocessor.DataNormalization;
 import org.nd4j.linalg.dataset.api.preprocessor.ImagePreProcessingScaler;
+import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -201,7 +202,7 @@ public class ConvNeuralNet {
             .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
             .iterations(1)
             .learningRate(0.006)
-            .updater(Updater.NESTEROVS).momentum(0.9)
+            .updater(new Nesterovs(0.09))
             .regularization(true).l2(1e-4)
             .list()
                 .layer(0, new ConvolutionLayer.Builder(5, 5)
